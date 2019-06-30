@@ -19,6 +19,7 @@ class News(models.Model):
     image = models.ImageField(upload_to="blogs/featured_images")
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    tags = models.TextField()
 
     def __str__(self):
         return self.title
